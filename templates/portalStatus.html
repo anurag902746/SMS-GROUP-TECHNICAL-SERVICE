@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Service Portal License Validity</title>
+    <link rel="icon" href="./static/images/icon.png">
+    <link rel="stylesheet" href="./static/css/portalstatus.css">
+</head>
+<body>
+<header class="header">
+    Service Portal Licenses Validity
+</header>
+<div class="main-container">
+    <span class="heading">Main Projects</span>
+    <table class="table">
+        <thead class="table_heading">
+        <td>Project Name</td>
+        <td>Customer Name</td>
+        <td>SMI WBS</td>
+        <td>SMI-SDE PO</td>
+        <td>Location</td>
+        <td>Project Manager</td>
+        <td>Duration</td>
+        <td>Start</td>
+        <td>End</td>
+        <td>SDE WBS</td>
+        <td>Service Portal Status</td>
+        <td>Migration</td>
+        </thead>
+        {% for item in mainData['PortalStatus']: %}
+        <tr>
+            <td>{{item['Project Name']}}</td>
+            <td>{{item['Customer Name']}}</td>
+            <td>{{item['SMI WBS']}}</td>
+            <td>{{item['SMI-SDE PO']}}</td>
+            <td>{{item['Location']}}</td>
+            <td>{{item['Project Manager']}}</td>
+            <td>{{item['Duration']}}</td>
+            <td>{{item['Start']}}</td>
+            <td>{{item['End']}}</td>
+            <td>{{item['SDE WBS']}}</td>
+            <td class="status_column">{{item['Servie Portal Status']}}</td>
+            <td class="status_column">{{item['Migration']}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <span class="heading" style="margin-top:10px">EAB Service Contracts</span>
+    <table class="table">
+        <thead class="table_heading">
+        <td>Project Name</td>
+        <td>Customer Name</td>
+        <td>SMI WBS</td>
+        <td>SMI-SDE PO</td>
+        <td>Location</td>
+        <td>Project Manager</td>
+        <td>Duration</td>
+        <td>Start</td>
+        <td>End</td>
+        <td>SDE WBS</td>
+        <td>Service Portal Status</td>
+        <td>Migration</td>
+        </thead>
+        {% for item in serviceData['PortalStatus']: %}
+        <tr>
+            <td>{{item['Project Name']}}</td>
+            <td>{{item['Customer Name']}}</td>
+            <td>{{item['SMI WBS']}}</td>
+            <td>{{item['SMI-SDE PO']}}</td>
+            <td>{{item['Location']}}</td>
+            <td>{{item['Project Manager']}}</td>
+            <td>{{item['Duration']}}</td>
+            <td>{{item['Start']}}</td>
+            <td>{{item['End']}}</td>
+            <td>{{item['SDE WBS']}}</td>
+            <td class="status_column">{{item['Servie Portal Status']}}</td>
+            <td class="status_column">{{item['Migration']}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+<h5 style="margin:0;margin-left:5px">*Please note that now all TATA Steel Plants ( like TATA Jamshedpur + TATA
+    KPO + TATA BSL ) are merged into main group and named "TSL ( TATA STEEL LIMITED)" now.</h5>
+</body>
+</html>

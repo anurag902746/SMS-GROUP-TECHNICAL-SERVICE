@@ -1,0 +1,20 @@
+{
+  "button": [
+    {
+      "function": "myFunction1()",
+      "name": "JSW Toranagallu(SMS-2 Slab Caster 6,7 & 8)"
+    },
+    {
+      "function": "myFunction2()",
+      "name": "JSPL Raigarh(TKS Slab Caster)"
+    },
+    {
+      "function": "myFunction3()",
+      "name": "SAIL RSP(SMS-2 Slab Caster-3)"
+    },
+    {
+      "function": "myFunction4()",
+      "name": "TATA Steel Angul (Slab Caster 1,2,3)"
+    }
+  ]
+}

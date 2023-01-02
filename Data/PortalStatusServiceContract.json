@@ -1,0 +1,88 @@
+{
+  "PortalStatus": [
+    {
+      "Project Name": "JSW-SMS2 Caster2,3&4(JindalSW)",
+      "Customer Name": "JSW Steel Limited, Vijayanagar Works",
+      "SMI WBS": "S00721M310.90.1000",
+      "SMI-SDE PO": "4700044259",
+      "Location": "Toranagallu",
+      "Project Manager": "Raj KumarSharma",
+      "Duration": "1 year",
+      "Start": "01.04.2022",
+      "End": "31.03.2023",
+      "SDE WBS": "",
+      "Servie Portal Status": "Active",
+      "Migration": "Done"
+    },
+    {
+      "Project Name": "TATA CSP",
+      "Customer Name": "TATA STEEL LIMITED,  Jamshedpur",
+      "SMI WBS": "S00380M220.90.1300",
+      "SMI-SDE PO": "4700031086",
+      "Location": "Jamshedpur",
+      "Project Manager": "Raj KumarSharma",
+      "Duration": "1 year",
+      "Start": "01.05.2020",
+      "End": "30.04.2021",
+      "SDE WBS": "",
+      "Servie Portal Status": "De-activated",
+      "Migration": "Done"
+    },
+    {
+      "Project Name": "TATA STEEL(BHUSHAN),Caster 1,2&3",
+      "Customer Name": "TATA STEEL LIMITED, Meramandali",
+      "SMI WBS": "S00706M340.90.1000",
+      "SMI-SDE PO": "4700043115",
+      "Location": "Meramandali, Odisha",
+      "Project Manager": "Raj KumarSharma",
+      "Duration": "1 year",
+      "Start": "01.04.2022",
+      "End": "31.03.2023",
+      "SDE WBS": "",
+      "Servie Portal Status": "Active",
+      "Migration": "Done"
+    },
+    {
+      "Project Name": "SAIL RSP Caster3",
+      "Customer Name": "Rourkela Steel Plant, SAIL",
+      "SMI WBS": "S00734M310.90.1000",
+      "SMI-SDE PO": "4700045433",
+      "Location": "Rourkela",
+      "Project Manager": "Raj KumarSharma",
+      "Duration": "1 year",
+      "Start": "14.07.2022",
+      "End": "13.07.2024",
+      "SDE WBS": "",
+      "Servie Portal Status": "Active",
+      "Migration": "Done"
+    },
+    {
+      "Project Name": "TATA KPO BOF,L2 System Model Improvement",
+      "Customer Name": "TATA STEEL LIMITED, Kalinganagar",
+      "SMI WBS": "S00572M340.90.1100",
+      "SMI-SDE PO": "4700040990( license PO ) 4700039979( main PO )",
+      "Location": "Kalinganagar, Odisha",
+      "Project Manager": "Raj KumarSharma",
+      "Duration": "1 year",
+      "Start": "26.11.2021",
+      "End": "25.11.2022",
+      "SDE WBS": "",
+      "Servie Portal Status": "Active",
+      "Migration": "Done"
+    },
+    {
+      "Project Name": "JSPL-Raigarh Caster",
+      "Customer Name": "Jindal Steel and Power Ltd ",
+      "SMI WBS": "S00410M310.90.1200",
+      "SMI-SDE PO": "4700041848",
+      "Location": "Raigarh,Chhattisgarh",
+      "Project Manager": "Raj KumarSharma",
+      "Duration": "1 year",
+      "Start": "28.01.2022",
+      "End": "27.01.2023",
+      "SDE WBS": "",
+      "Servie Portal Status": "Active",
+      "Migration": "Done"
+    }
+  ]
+}

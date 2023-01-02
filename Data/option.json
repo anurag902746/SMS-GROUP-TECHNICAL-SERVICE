@@ -1,0 +1,7 @@
+{
+  "Year": ["2017","2018","2019","2020","2021","2022"],
+  "level": ["Level_1","TCS_Server","Level_2"],
+  "level1_func": ["All","Drive_PLC","Instrumentation_PLC","Common_PLC","Safety_PLC"],
+  "TCS_Server": ["All","TLC","MLC","HMO","RAM","HSA"],
+  "level2_func": ["All","CCC","MMS","DSC"]
+}

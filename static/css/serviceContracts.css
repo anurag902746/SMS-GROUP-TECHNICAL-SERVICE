@@ -1,0 +1,85 @@
+.header-container{
+  border:0;
+  border-bottom: 2px solid #D4D8DD;
+  font-size: 25px;
+  font-weight: bolder;
+  font-family: arial;
+  height: 50px;
+  margin-top:5px;
+  position: relative;
+}
+.sms-name{
+  bottom: 20px;
+  font-weight: bold;
+  height:28px;
+  left: 30px;
+  position: absolute;
+  top: 10px;
+}
+.icon{
+  height: 25px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.x-pact-logo{
+  position: absolute;
+  right:30px;
+  height: 28px;
+  margin-top:10px;
+}
+label{
+  color:#666699;
+  font-weight: bolder;
+}
+.selection-tab{
+  margin-top:30px;
+  height:300px;
+}
+.selection-dropdown{
+  display:inline-block;
+}
+.drop-down{
+  margin-left:30px;
+}
+#drop-down1{
+  margin-left:30px;
+}
+#drop-down2{
+  display:none;
+  margin-left:30px;
+}
+#drop-down3{
+  display:none;
+  margin-left:30px;
+}
+#piechart{
+  float:left;
+}
+#piechart2{
+  margin-left:50px;
+}
+.submit-btn{
+  display:inline;
+  margin-left:30px;
+  margin-top:10px;
+}
+.customer-name{
+  font-weight: bolder;
+  text-align:center;
+  
+}
+.customer-heading{
+  margin-left:30px;
+}
+.list-heading{
+  margin:0;
+  margin-left:30px;
+  margin-bottom:15px;
+  font-weight:bolder;
+  color:#008000;
+  text-decoration: underline;
+}
+.serviceList{
+  display:none;
+  margin-top:30px;
+}

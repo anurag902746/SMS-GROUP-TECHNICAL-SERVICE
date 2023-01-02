@@ -1,0 +1,104 @@
+{
+  "customer": [
+    {
+      "class_id": "customers-overview-list1",
+      "name": "JSW Toranagallu(SMS-2 Slab Caster 6,7 & 8)",
+      "link": "/JSW(Tor)",
+      "mechanical": "Mechanical",
+      "electrical": "Electrical & Automation",
+      "level1": [
+        "Drive PLC",
+        "Instrumentaion PLC",
+        "Common PLC",
+        "Safety PLC"
+      ],
+      "TCS": [
+        "TLC",
+        "MLC",
+        "HMO",
+        "RAM",
+        "HSA"
+      ],
+      "level2": [
+        "CCC",
+        "MMS",
+        "DSC"
+      ]
+    },
+    {
+      "class_id": "customers-overview-list2",
+      "name": "JSPL Raigarh(Slab Caster)",
+      "link": "/JSPL(Raigarh)",
+      "mechanical": "Mechanical",
+      "electrical": "Electrical & Automation",
+      "level1": [
+        "Drive PLC",
+        "Instrumentaion PLC",
+        "Common PLC",
+        "Safety PLC"
+      ],
+      "TCS": [
+        "TLC",
+        "MLC",
+        "HMO",
+        "RAM",
+        "HSA"
+      ],
+      "level2": [
+        "CCC",
+        "MMS",
+        "DSC"
+      ]
+    },
+    {
+      "class_id": "customers-overview-list3",
+      "name": "SAIL RSP(SMS-2 Slab Caster-3)",
+      "link": "/SAIL(RSP)",
+      "mechanical": "Mechanical",
+      "electrical": "Electrical & Automation",
+      "level1": [
+        "Drive PLC",
+        "Instrumentaion PLC",
+        "Common PLC",
+        "Safety PLC"
+      ],
+      "TCS": [
+        "TLC",
+        "MLC",
+        "HMO",
+        "RAM",
+        "HSA"
+      ],
+      "level2": [
+        "CCC",
+        "MMS",
+        "DSC"
+      ]
+    },
+    {
+      "class_id": "customers-overview-list4",
+      "name": "TATA Steel Angul (Slab Caster 1,2,3)",
+      "link": "/TATA(Angul)",
+      "mechanical": "Mechanical",
+      "electrical": "Electrical & Automation",
+      "level1": [
+        "Drive PLC",
+        "Instrumentaion PLC",
+        "Common PLC",
+        "Safety PLC"
+      ],
+      "TCS": [
+        "TLC",
+        "MLC",
+        "HMO",
+        "RAM",
+        "HSA"
+      ],
+      "level2": [
+        "CCC",
+        "MMS",
+        "DSC"
+      ]
+    }
+  ]
+}

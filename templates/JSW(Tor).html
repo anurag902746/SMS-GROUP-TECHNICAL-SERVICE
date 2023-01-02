@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>JSW Toranagallu(SMS-2 Slab Caster 6,7 & 8)</title>
+    <link rel="stylesheet" href="./static/css/serviceContracts.css">
+    <link rel="icon" href="./static/images/favicon.ico">
+    <style>
+            #customers {
+              font-family: Arial, Helvetica, sans-serif;
+              border-collapse: collapse;
+              border:2px solid grey;
+              width: 100%;
+            }
+
+            #customers td, #customers th {
+              border: 1px solid #ddd;
+              padding: 4px;
+              font-size:12px;
+              width:100px;
+            }
+
+            #customers tr:nth-child(even){background-color: #f2f2f2;}
+
+            #customers tr:hover {background-color: #ddd;}
+
+            #customers th {
+              padding-top: 8px;
+              padding-bottom: 8px;
+              text-align: left;
+              background-color: #04AA6D;
+              color: white;
+            }
+
+    </style>
+</head>
+<body>
+<div class="header-container">
+    <div class="sms-name">
+        <a href="https://www.sms-group.com/" style="text-decoration:none;" target="_self">SMS<span><img
+                src="./static/images/icon.png" alt="sms-icon" class="icon"></span>group</a>
+    </div>
+    <a href="https://www.sms-group.com/services/x-pact-service" target="_self"><img src="./static/images/xpactlogo.jpg"
+                                                                                    alt="" class="x-pact-logo"></a>
+</div>
+<h2 class="customer-name">JSW Toranagallu(SMS-2 Slab Caster 6,7 & 8)</h2>
+<div class="selection-tab">
+    <div class="selection-dropdown">
+        <h5 class="list-heading">To View Case Lists:</h5>
+        <form action={{url_for('serviceContractTornagallu')}} method="post">
+            <span class="drop-down">
+          <label for="year-dropdown">Please Select Year</label>
+          <select id="year-dropdown" name="year-dropdown">
+              <option value="">Select an item</option>
+            {% for item in optionData['Year']: %}
+            <option value={{item}}>{{item}}</option>
+            {% endfor %}
+          </select>
+        </span>
+            <span class="drop-down">
+          <label for="level-dropdown">Please Select Level</label>
+          <select id="level-dropdown" name="level-dropdown">
+              <option value="">Select an item</option>
+            {% for item in optionData['level']: %}
+            <option value={{item}}>{{item}}</option>
+            {% endfor %}
+          </select>
+        </span>
+            <span id="drop-down1">
+          <label for="function-dropdown1">Please Select Function</label>
+          <select id="function-dropdown1" name="function-dropdown">
+              <option value="">Select an item</option>
+            {% for item in optionData['level1_func']: %}
+            <option value={{item}}>{{item}}</option>
+            {% endfor %}
+          </select>
+        </span>
+            <span id="drop-down2">
+          <label for="function-dropdown2">Please Select Function</label>
+          <select id="function-dropdown2" name="function-dropdown">
+              <option value="">Select an item</option>
+            {% for item in optionData['level2_func']: %}
+            <option value={{item}}>{{item}}</option>
+            {% endfor %}
+          </select>
+        </span>
+            <span id="drop-down3">
+          <label for="function-dropdown3">Please Select Function</label>
+          <select id="function-dropdown3" name="function-dropdown">
+              <option value="">Select an item</option>
+            {% for item in optionData['TCS_Server']: %}
+            <option value={{item}}>{{item}}</option>
+            {% endfor %}
+          </select>
+        </span>
+            <!--        <button type="submit" class="submit-btn" name="submit-btn" onclick="getOption()">Submit</button>-->
+            <button type="submit" class="submit-btn" name="submit-btn">Submit</button>
+        </form>
+    </div>
+    <div id="piechart"></div>
+</div>
+{% if testName=="hello" %}
+<div>
+    <table id="customers">
+        <tr>
+            <th>Description</th>
+            <th>Contact</th>
+            <th>Case no</th>
+            <th>Date</th>
+            <th>Priority</th>
+            <th>Total Hours(hr)</th>
+            <th>SMI</th>
+            <th>SDE</th>
+            <th>Level</th>
+        </tr>
+        {% for item in caseList: %}
+        <tr>
+            <td>{{item["Topic"]}}</td>
+            <td>{{item["Contact"]}}</td>
+            <td>{{item["Case no"]}}</td>
+            <td>{{item["Date"]}}</td>
+            <td>{{item["Priority"]}}</td>
+            <td>{{item["Total Hours(hr)"]}}</td>
+            <td>{{item["SMI"]}}</td>
+            <td>{{item["SDE"]}}</td>
+            <td>{{item["Level"]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endif %}
+</body>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="./static/js/JSPL(Raigarh).js"></script>
+</html>

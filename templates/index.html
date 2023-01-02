@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>SMS group Service Portal</title>
+    <link rel="icon" href="./static/images/icon.png">
+    <link rel="stylesheet" href="./static/css/index.css">
+</head>
+<body>
+<div class="header-container">
+    <div class="sms-name">
+        <a href="https://www.sms-group.com/" style="text-decoration:none;" target="_blank">SMS<span><img
+                src="./static/images/icon.png" alt="sms-icon" class="icon"></span>group</a>
+    </div>
+    <a href="https://www.sms-group.com/services/x-pact-service" target="_blank"><img src="./static/images/xpactlogo.jpg"
+                                                                                     alt="" class="x-pact-logo"></a>
+</div>
+<div class="intro-container">
+    <div class="agreement">
+        <h3 class="heading">X-Pact<sup>&#174;</sup>Service Agreement:</h3>
+        <ul class="first_list">
+            <li>24x7 telephone hotline</li>
+            <li>Global expertise network</li>
+            <li>A service specialist familiar with your equipment</li>
+            <li>Remote support via the X-Pact® Service portal</li>
+        </ul>
+    </div>
+    <video src='./static/video/TS.mp4' controls class="Ts_video"></video>
+</div>
+<h4 class="agreement-text">Active Service Agreements:</h4>
+<div class="customers-tab">
+    <h6 class="active-contracts">1.<span class="contract-heading">Active Service Contracts</span></h6>
+    <div id="main-customer-container">
+        <ul class="second_list">
+            {% for item in buttonData['button']: %}
+            <li>
+                <button onclick={{item['function']}} class="contract-btn" type="button">{{item['name']}}</button>
+            </li>
+            {% endfor %}
+        </ul>
+        {% for item in overviewData['customer']: %}
+        <div id={{item['class_id']}}>
+            <h5 class="general-overview">{{item['name']}}<br><br>General Overview</h5>
+            <div class="overview-list">
+                <ul>
+                    <li>{{item['mechanical']}}</li>
+                    <li>{{item['electrical']}}</li>
+                    <ul>
+                        <li>
+                            Level 1
+                            <ul>
+                                {% for i in item['level1'] %}
+                                <li>{{i}}</li>
+                                {% endfor %}
+                            </ul>
+                            <span>TCS Server{{url_for('portalStatus_page')}}</span>
+                            <ul>
+                                {% for i in item['TCS'] %}
+                                <li>{{i}}</li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        <li>
+                            Level 2
+                            <ul>
+                                {% for i in item['level2'] %}
+                                <li>{{i}}</li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="caselist-container">
+                <div class="tickets-registered">Total Tickets Registered (2017-2022): <span
+                        class="ticket-no">99 nos</span></div>
+                <ul class="listlink">
+                    <li> Please <a href={{item['link']}} target="_blank"><span
+                            id="caselist-link">Click Here</span></a> to view more detalis on contract & registered
+                        cases.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <h6 class="active-contracts">2.<span class="contract-heading">Active Service Portal</span></h6>
+    <h3 class="activation"><a href={{url_for('portalStatus_page')}} target="_blank" class="Validity">Click To View
+        Service Portal Activation Validity</a></h3>
+</div>
+<footer class="footer">
+    <div class="footer-logo">
+        <a href="https://www.sms-group.com/" style="text-decoration:none;" target="_blank">SMS<span><img
+                src="./static/images/icon.png" alt="sms-icon" class="icon"></span>group</a>
+    </div>
+    <div class="contact-details">
+        <h6 class="company-name">SMS INDIA PVT LTD.</h6>
+        <div class="address">
+            Electrics/Automation <br>
+            286, Udyog Vihar,Phase-II<br>
+            Gurugram-122 016,Haryana/India<br>
+            Phone:+91(0)124-435-1700<br>
+            automation.hotline@sms-group.com
+        </div>
+    </div>
+</footer>
+<div class="copyright">
+    <span>© 2022 SMS group GmbH</span>
+    <span class="data_protection">Data Protection Notice</span>
+</div>
+</body>
+<script type="text/javascript" src="./static/js/index.js">
+</script>
+</html>
